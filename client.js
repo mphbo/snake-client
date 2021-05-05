@@ -17,6 +17,8 @@ const connect = function (data) {
   conn.on('connect', () => {
     console.log('You are connected to the server');
     conn.write('Name: LOG');
+    // conn.write('Move: up');
+    // setInterval(() => conn.write('Move: up'), 50);
   })
 
   return conn;
